@@ -23,3 +23,8 @@ class Robot :
 
     def position(self) :
         return round(self.x,2), round(self.y,2), self.angle
+
+    def reset(self) :
+        self.x = 0.0
+        self.y = 0.0
+        self.angle = 0.0
