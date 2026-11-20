@@ -8,3 +8,5 @@ for i in range(4) :
     r.tourner(90)
     print(r.position())
 
+
+r.avancer(-5)
