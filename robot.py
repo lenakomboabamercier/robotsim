@@ -12,6 +12,8 @@ class Robot :
     # Les methodes
 
     def avancer(self,distance) :
+        if distance < 0 :
+            raise ValueError("La distance doit être positive ou nulle")
         rad = math.radians(self.angle)
         self.x += distance * math.cos(rad)
         self.y += distance * math.sin(rad)
