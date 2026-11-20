@@ -1,3 +1,5 @@
+# Petit simulateur de déplacement d'un robot
+
 import math
 
 class Robot : 
