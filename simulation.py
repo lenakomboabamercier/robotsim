@@ -11,3 +11,5 @@ for i in range(4) :
 
 
 r.avancer(-5)
+
+print("Sur la table :", r.est_sur_table())
