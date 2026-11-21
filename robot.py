@@ -38,4 +38,7 @@ class Robot :
         mesure = capteur.mesurer(distance_obstacle)
         return mesure is not None and mesure<seuil
 
+    def est_sur_la_table(self,largeur=300,hauteur=200) :
+        return 0 <= self.x <=largeur and 0 <=self.y <= hauteur
+
 #modifié depuis le PC 2
