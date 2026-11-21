@@ -21,6 +21,7 @@ class Robot :
         self.y += distance * math.sin(rad)
 
     def tourner(self,degres) :
+        """Tourne le robot. L'angle reste entre 0 et 359."""
         self.angle = (self.angle + degres)%360
 
     def position(self) :
