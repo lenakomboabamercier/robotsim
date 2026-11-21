@@ -1,3 +1,4 @@
+# PC 2
 class Capteur :
     def __init__(self,portee_max=50.0):
         self.portee_max = portee_max
