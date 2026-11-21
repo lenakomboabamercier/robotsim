@@ -9,6 +9,7 @@ class Robot :
         self.x = x
         self.y = y
         self.angle = angle #en degres
+        self.batterie = 100
 
 
     # Les methodes
@@ -19,6 +20,7 @@ class Robot :
         rad = math.radians(self.angle)
         self.x += distance * math.cos(rad)
         self.y += distance * math.sin(rad)
+        self.batterie -=distance * 0.1
 
     def tourner(self,degres) :
         """Tourne le robot. L'angle reste entre 0 et 359."""
