@@ -34,3 +34,5 @@ class Robot :
     def detecteur_obstacle(self,capteur,distance_obstacle,seuil=10.0):
         mesure = capteur.mesurer(distance_obstacle)
         return mesure is not None and mesure<seuil
+
+#modifié depuis le PC 2
