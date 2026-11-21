@@ -1,4 +1,3 @@
-# PC 1
 from robot import Robot
 
 cote = 10
