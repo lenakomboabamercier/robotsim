@@ -30,3 +30,7 @@ class Robot :
         self.x = 0.0
         self.y = 0.0
         self.angle = 0.0
+
+    def detecteur_obstacle(self,capteur,distance_obstacle,seuil=10.0):
+        mesure = capteur.mesurer(distance_obstacle)
+        return mesure is not None and mesure<seuil
