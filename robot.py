@@ -22,7 +22,9 @@ class Robot :
         rad = math.radians(self.angle)
         self.x += distance * math.cos(rad)
         self.y += distance * math.sin(rad)
-        self.batterie -=distance * 0.1
+        self.batterie -= distance * 0.1
+        self.x = min(max(self.x, 0), 300)
+        self.y = min(max(self.y, 0), 200)
 
     def tourner(self,degres) :
         """Tourne le robot. L'angle reste entre 0 et 359."""
